@@ -1,0 +1,32 @@
+# Dependencies
+node_modules
+
+# Build output
+dist
+build
+
+# Angular build cache (local, not for CI)
+.angular
+
+# Environment files — never commit these
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Test coverage
+coverage
+
+# OS
+.DS_Store
+Thumbs.db
+
+# JetBrains
+.idea/*
+
+# TypeScript incremental compilation cache
+*.tsbuildinfo
