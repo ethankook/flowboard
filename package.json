@@ -3,5 +3,13 @@
   "private": true,
   "engines": {
     "node": ">=20.0.0"
+  },
+  "scripts": {
+    "dev:api": "pnpm --filter @flowboard/api start:dev",
+    "dev:web": "pnpm --filter @flowboard/web start",
+    "db:up": "docker compose up -d",
+    "db:down": "docker compose down",
+    "db:reset": "docker compose down -v && docker compose up -d"
   }
 }
+
